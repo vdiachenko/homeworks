@@ -3,34 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Товары</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 40px;
+        }
+    </style>
 </head>
 <body>
-
-<script type="text/template" id="productTemplate">
-    <div class="row">
-        <% items.forEach(function(product) { %>
-        <div class="product col-md-3 col-xs-3">
-            <img src="media/products/<%-product.pic%>" alt="">
-            <h3 class="title"><%-product.name%></h3>
-            <p class="price">Цена: <%-product.price%></p>
-        </div>
-        <% }); %>
-    </div>
-</script>
-
 <h2>Распродажа</h2>
-<ul id="sale"></ul>
+<div id="sale"></div>
 
 <h2>Промо-акция</h2>
-<ul id="promo"></ul>
+<div id="promo"></div>
 
 <h2>Рекомендуемые товары</h2>
-<ul id="recommended"></ul>
+<div id="recommended"></div>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script>
-<script src="//code.jquery.com/jquery-3.0.0.min.js"
+<!-- Шаблон lodash -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"
         integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
