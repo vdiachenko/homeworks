@@ -1,4 +1,4 @@
-$(function () { // Не убирать
+'use strict';
+$(function () {
     // Ваш код
-    alert('test');
 });
