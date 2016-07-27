@@ -12,3 +12,8 @@
 Шрифты и иконки пока делать не нужно, мы их рассмотрим отдельно.
 
 Ссылка на архив с макетом есть в чате "Фронтэнд-ликбез".
+
+## Материалы
+* [Занятие от 18 июля](https://github.com/OggettoWeb/frontend-path/blob/master/diary/july/18/index.md#Оптимизация). Там есть примеры кода с нужными полифилами.
+* Курс [Responsive Images](https://www.udacity.com/course/responsive-images--ud882)
+* Курс [Responsive Web Design Fundamentals](https://www.udacity.com/course/responsive-web-design-fundamentals--ud893)
