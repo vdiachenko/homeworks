@@ -1,10 +1,9 @@
 const CitySelector = require('./CitySelector');
 
-/*
-http://localhost:3000/regions — список регионов
-http://localhost:3000/regions/23 — Краснодарский край
-*/
-
-// containerId, regionsURL, localitiesUrl
-new CitySelector('citySelector', 'http://localhost:3000/regions', 'http://localhost:3000/localities');
+new CitySelector({
+    elementId: 'citySelector',
+    regionsUrl: 'http://localhost:3000/regions',
+    localitiesUrl: 'http://localhost:3000/localities',
+    saveUrl: 'http://localhost:3000/selectedRegions'
+});
 
