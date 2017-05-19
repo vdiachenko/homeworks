@@ -51,13 +51,13 @@ upstream    https://github.com/amiskov/homeworks.git (fetch)
 upstream    https://github.com/amiskov/homeworks.git (push)
 ```
 
-Теперь вы можете подтягивать изменения из основного репозитория командой `fetch`:
+Подтяните изменения из основного репозитория командой `fetch`:
 
 ```sh
 > git fetch upstream 
 ```
 
-И мержить их в свой `master`:
+И добавьте их в свой `master`:
 
 ```sh
 > git checkout master
