@@ -12,7 +12,11 @@ export default class {
             return;
         }
 
-        return axios.get(url);
+        try {
+            return axios.get(url);
+        } catch (err) {
+            console.error(err.message);
+        }
     }
 
     async data(opts) {
@@ -25,7 +29,7 @@ export default class {
         if (this.storage[url] === undefined) {
             this.storage[url] = await this.fetch(url);
         }
-        
+
         return this.storage[url];
     }
 
@@ -60,12 +64,12 @@ export default class {
             throw 'Error';
         }
 
-        const [ { list } ] = data.filter(item => item.id === id);
+        const { list } = data.find(item => item.id === id);
 
         return list;
     }
 
     get formData() {
-        return { url: this.settings.saveUrl, ...this.state.selected}
+        return { url: this.settings.saveUrl, ...this.state.selected }
     }
 };
